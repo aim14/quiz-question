@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="freeCodeCamp Accessibility Quiz practice project"
+    />
+    <title>Accessibility Quiz</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        id="logo"
+        src="data:image/jpeg;base64,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"
+      />
+      <h1>HTML/CSS Quiz</h1>
+      <nav>
+        <ul>
+          <li><a href="#student-info">INFO</a></li>
+          <li><a href="#html-questions">HTML</a></li>
+          <li><a href="#css-questions">CSS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form
+        method="post"
+        action="https://freecodecamp.org/practice-project/accessibility-quiz"
+      >
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Student Info</h2>
+          <div class="info">
+            <label for="student-name">Name:</label>
+            <input type="text" name="student-name" id="student-name" />
+          </div>
+          <div class="info">
+            <label for="student-email">Email:</label>
+            <input type="email" name="student-email" id="student-email" />
+          </div>
+          <div class="info">
+            <label for="birth-date"
+              >D.O.B.<span class="sr-only">(Date of Birth)</span></label
+            >
+            <input type="date" name="birth-date" id="birth-date" />
+          </div>
+        </section>
+        <section role="region" aria-labelledby="html-questions">
+          <h2 id="html-questions">HTML</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="html-question-one">
+              <legend>
+                The legend element represents a caption for the content of its
+                parent fieldset element
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input type="radio" id="q1-a1" name="q1" value="true" />
+                    True
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="q1-a2" name="q1" value="false" />
+                    False
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question" name="html-question-two">
+              <legend>
+                A label element nesting an input element is required to have a
+                for attribute with the same value as the input's id
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input type="radio" id="q2-a1" name="q2" value="true" />
+                    True
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input type="radio" id="q2-a2" name="q2" value="false" />
+                    False
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="css-questions">
+          <h2 id="css-questions">CSS</h2>
+          <div class="formrow">
+            <div class="question-block">
+              <label for="customer">Are you a frontend developer?</label>
+            </div>
+            <div class="answer">
+              <select name="customer" id="customer" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="css-questions">Do you have any questions:</label>
+            </div>
+            <div class="answer">
+              <textarea
+                id="css-questions"
+                name="css-questions"
+                rows="5"
+                cols="24"
+                placeholder="Enter your question..."
+              ></textarea>
+            </div>
+          </div>
+        </section>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <address>
+        <a href="https://github.com/aim14">My GitHub</a><br />
+        Kuala Lumpur<br />
+        Malaysia
+      </address>
+    </footer>
+  </body>
+</html>
